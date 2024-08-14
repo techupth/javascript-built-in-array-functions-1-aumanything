@@ -7,7 +7,10 @@ const todos = [
 ];
 
 function getCompletedTodo(todos) {
-  // Start coding here
+  const completedTodos = todos.filter((todo) => {
+    return todos.completed === true;
+  });
+  return completedTodos;
 }
 
 getCompletedTodo(todos);
